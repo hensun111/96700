@@ -1,0 +1,52 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="sYzR?UGG$]_fkQ6R0{w(">Player</variable><variable type="KIND_SpriteKind" id="hOOch[Ixaq5]2limuYFC">Projectile</variable><variable type="KIND_SpriteKind" id="#g4CXvA,!bsNk.88N]vl">Food</variable><variable type="KIND_SpriteKind" id="5svRv~M~}W1Tt+4S_n}T">Enemy</variable><variable id="fcq%,PL]3;Xz|W-gh@4t">mySprite</variable><variable id="HMVpPYr5`rpRE,9J~6v{">mySprite2</variable><variable id="tw8l2PATsGTqnUJR(,,w">moving left</variable><variable id="TBc{5Wa?dC:-dPHa/y%a">projectile</variable></variables><block type="gameinterval" x="230" y="-310"><value name="period"><shadow type="timePicker"><field name="ms">500</field></shadow></value><statement name="HANDLER"><block type="controls_if"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="variables_get"><field name="VAR" id="tw8l2PATsGTqnUJR(,,w">moving left</field></block></value><statement name="DO0"><block type="variables_set"><field name="VAR" id="TBc{5Wa?dC:-dPHa/y%a">projectile</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromside"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+. . . . . . . 2 a 2 . . . . . . 
+. . . . . . . 2 a a 2 . . . . . 
+. . . . . . . 2 a a a 2 . . . . 
+. . . . . . . 2 a a a a 2 . . . 
+2 2 2 2 2 2 2 2 a a a a a 2 . . 
+2 f a f a f a f a f a f a f 2 . 
+2 9 8 9 8 9 8 9 8 9 8 9 8 9 8 2 
+2 f a f a f a f a f a f a f 2 . 
+2 2 2 2 2 2 2 2 a a a a a 2 . . 
+. . . . . . . 2 a a a a 2 . . . 
+. . . . . . . 2 a a a 2 . . . . 
+. . . . . . . 2 a a 2 . . . . . 
+. . . . . . . 2 a 2 . . . . . . 
+. . . . . . . . 2 . . . . . . . 
+`</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">100</field></shadow></value></block></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">10</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">100</field></shadow></value></block></value></block></value></block></statement><statement name="ELSE"><block type="variables_set"><field name="VAR" id="TBc{5Wa?dC:-dPHa/y%a">projectile</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromside"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . 2 . . . . . . . . 
+. . . . . . 2 a 2 . . . . . . . 
+. . . . . 2 a a 2 . . . . . . . 
+. . . . 2 a a a 2 . . . . . . . 
+. . . 2 a a a a 2 . . . . . . . 
+. . 2 a a a a a 2 2 2 2 2 2 2 2 
+. 2 a f a f a f a f a f a f a f 
+2 9 8 9 8 9 8 9 8 9 8 9 8 9 8 9 
+. 2 a f a f a f a f a f a f a f 
+. . 2 a a a a a 2 2 2 2 2 2 2 2 
+. . . 2 a a a a 2 . . . . . . . 
+. . . . 2 a a a 2 . . . . . . . 
+. . . . . 2 a a 2 . . . . . . . 
+. . . . . . 2 a 2 . . . . . . . 
+. . . . . . . 2 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="screen_image_picker"><field name="img">img`
+. . . . . . . 2 . . . . . . . . 
+. . . . . . 2 a 2 . . . . . . . 
+. . . . . 2 a a 2 . . . . . . . 
+. . . . 2 a a a 2 . . . . . . . 
+. . . 2 a a a a 2 . . . . . . . 
+. . 2 a a a a a 2 2 2 2 2 2 2 2 
+. 2 a f a f a f a f a f a f a 2 
+2 9 8 9 8 9 8 9 8 9 8 9 8 9 8 2 
+. 2 a f a f a f a f a f a f a 2 
+. . 2 a a a a a 2 2 2 2 2 2 2 2 
+. . . 2 a a a a 2 . . . . . . . 
+. . . . 2 a a a 2 . . . . . . . 
+. . . . . 2 a a 2 . . . . . . . 
+. . . . . . 2 a 2 . . . . . . . 
+. . . . . . . 2 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">-100</field></shadow></value></block></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">10</field></shadow><block type="device_random"><value name="min"><shadow type="math_number"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">100</field></shadow></value></block></value></block></value></block></statement></block></statement></block><block type="keyonevent" x="50" y="-30"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="tw8l2PATsGTqnUJR(,,w">moving left</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean"><field name="BOOL">TRUE</field></block></value></block></statement></block><block type="pxt-on-start" x="310" y="50"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="tw8l2PATsGTqnUJR(,,w">moving left</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean"><field name="BOOL">FALSE</field></block></value></block></statement></block><block type="keyonevent" x="50" y="90"><field name="button">controller.B</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="tw8l2PATsGTqnUJR(,,w">moving left</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="logic_boolean"><field name="BOOL">FALSE</field></block></value></block></statement></block></xml>
